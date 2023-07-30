@@ -1,33 +1,33 @@
 import React from "react";
 
-export default function Select({currentCharacter, changeCharacter}) {
+export default function Select({ currentCharacter, changeCharacter }) {
+  return (
+    <div className="selectContainer ">
+      <div
+        id="writer"
+        onClick={() => changeCharacter("Writer")}
+        className="charButtons"
+      >
+        
+        Writer
+      </div>
 
-   
-    return(
-    <div className="container w-100">
-        <div className="row border">
-            <button id="writer" onClick={()=>changeCharacter("Writer")} className="col-sm border">
-                Writer
-            </button>
-            <button id="coder" onClick={()=>changeCharacter("Coder")} className="col-sm border">
-                Coder
-            </button>
-            <button id="coordinator" onClick={()=>changeCharacter("Coordinator")} className="col-sm border">
-                Coordinator
-            </button>
+      <div
+        id="coder"
+        onClick={() => changeCharacter("Coder")}
+        className="charButtons"
+      >
+        Coder
+      </div>
 
+      <div
+        id="coordinator"
+        onClick={() => changeCharacter("Coordinator")}
+        className="  charButtons"
+      >
+        Coordinator
+      </div>
 
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
     </div>
-
-
-    )
+  );
 }

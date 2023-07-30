@@ -42,3 +42,27 @@
   height: 100vh;
   width: 100vw;
 }
+
+#title{
+  display: flex;
+  justify-content: center;
+}
+
+.selectContainer{
+width: 100%;
+height: 15%;
+border: solid black;
+display: flex;
+justify-content: space-around;
+/* position: absolute; */
+top: 100px;
+}
+
+.charButtons{
+  height: 100%;
+  width: 25%;
+  border: solid white;
+  color: white;
+  background-color: black;
+}
+

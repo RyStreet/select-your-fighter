@@ -28,10 +28,9 @@ const changeCharacter = (character) => setCurrentCharacter(character)
 
 return(
     <body id="body">
-    <h1>Hello!</h1>
-    {renderCharacter()}
+    <h1 id="title">Choose Your Fighter!</h1>
     <Select currentCharacter={currentCharacter} changeCharacter={changeCharacter}/>
-    
+    {renderCharacter()}
     </body>
 )
 
