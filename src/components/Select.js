@@ -1,19 +1,20 @@
 import React from "react";
 
-export default function Select() {
+export default function Select({currentCharacter, changeCharacter}) {
 
+   
     return(
     <div className="container w-100">
         <div className="row border">
-            <div className="col-sm border">
+            <button id="writer" onClick={()=>changeCharacter("Writer")} className="col-sm border">
                 Writer
-            </div>
-            <div className="col-sm border">
+            </button>
+            <button id="coder" onClick={()=>changeCharacter("Coder")} className="col-sm border">
                 Coder
-            </div>
-            <div className="col-sm border">
+            </button>
+            <button id="coordinator" onClick={()=>changeCharacter("Coordinator")} className="col-sm border">
                 Coordinator
-            </div>
+            </button>
 
 
         </div>
